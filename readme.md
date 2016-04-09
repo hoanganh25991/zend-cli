@@ -31,12 +31,12 @@ really `complicated` skeleton to sketch out zeach time
 
 what if...
 
-    zend create project [name]
+    zend skeleton [name]
 then all stuff __DONE__!
 
 any time when we need add a module, type
 
-    zend create module [name]
+    zend module [name]
 the same thing happens, module-skeleton __CREATED__, __ACTIVED__ in application.config.php!
                 
 
