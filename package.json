@@ -16,6 +16,7 @@
     "zend": "./index.js"
   },
   "dependencies": {
-    "commander": "^2.9.0"
+    "commander": "^2.9.0",
+    "shelljs": "^0.6.0"
   }
 }
