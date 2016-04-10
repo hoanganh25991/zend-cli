@@ -1,10 +1,14 @@
 {
   "name": "zend-cli",
-  "version": "0.0.0",
+  "version": "0.0.3",
   "description": "make folder to run zend framework 2",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hoanganh25991/zend-cli.git"
   },
   "keywords": [
     "zend",
@@ -17,7 +21,6 @@
   },
   "dependencies": {
     "change-case": "^2.3.1",
-    "commander": "^2.9.0",
-    "shelljs": "^0.6.0"
+    "commander": "^2.9.0"
   }
 }

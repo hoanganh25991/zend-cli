@@ -1,5 +1,5 @@
 #zend cli
-===
+
 node cli really powerful to work with `file system`
 
 write custom command in javscript (much more easy than bash/shell script)
@@ -38,5 +38,7 @@ any time when we need add a module, type
 
     zend module [name]
 the same thing happens, module-skeleton __CREATED__, __ACTIVED__ in application.config.php!
+
+review youtube: https://youtu.be/xUnH0qgbiZ4
                 
 

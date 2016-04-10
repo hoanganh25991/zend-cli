@@ -144,10 +144,14 @@ program
       var readFile = fs.readFileSync(configApplicationFilePath, "utf8");
       var arr = readFile.split(")");
       var newApplicationConfigPHPFile = arr[0] + "\'" + moduleName + "\'" + ",)";
-      for(var i = 1; i < arr.length; i++){
+      var arrLength = arr.length;
+      for(var i = 1; i < arrLength; i++){
         newApplicationConfigPHPFile += arr[i];
+        if(i != arrLength - 1){
+          newApplicationConfigPHPFile += ")";
+        }
       }
-      console.log(newApplicationConfigPHPFile);
+      //console.log(newApplicationConfigPHPFile);
       fs.writeFileSync(configApplicationFilePath, newApplicationConfigPHPFile);
     }else{
       console.log("module already exists\t%s", moduleNew);
