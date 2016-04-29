@@ -39,6 +39,6 @@ any time when we need add a module, type
     zend module [name]
 the same thing happens, module-skeleton __CREATED__, __ACTIVED__ in application.config.php!
 
-review youtube: https://youtu.be/xUnH0qgbiZ4
+review on youtube: https://youtu.be/xUnH0qgbiZ4
                 
 

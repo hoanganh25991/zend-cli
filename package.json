@@ -1,6 +1,6 @@
 {
   "name": "zend-cli",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "make folder to run zend framework 2",
   "main": "index.js",
   "scripts": {
@@ -21,6 +21,7 @@
   },
   "dependencies": {
     "change-case": "^2.3.1",
-    "commander": "^2.9.0"
+    "commander": "^2.9.0",
+    "fs-extra": "^0.30.0"
   }
 }

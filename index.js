@@ -4,7 +4,7 @@
  * Module dependencies.
  */
 var program = require("commander");
-var fs = require("fs");
+var fs = require("fs-extra");
 var path = require("path");
 
 program.version("0.0.0", "-v");
@@ -17,16 +17,16 @@ program.version("0.0.0", "-v");
  */
 var zendCliRoot = path.dirname(require.main.filename);
 /**
- * @var string defaultSkeleton
+ * @var string SKELETON_FOLDER_NAME
  * inside {this_module}, we have a zend skeleton folder named "default-skeleton"
  * zend framework can run immediately by config in "default-skeleton" folder
  */
-var defaultSkeleton = "default-skeleton";
+const SKELETON_FOLDER_NAME = "default-skeleton";
 /**
  * @var string src
  * path to zend skeleton in {this_module}
  */
-var src = path.join(zendCliRoot, defaultSkeleton);
+var src = path.join(zendCliRoot, SKELETON_FOLDER_NAME);
 console.log("src\t%s", src);
 
 /**
@@ -56,7 +56,7 @@ var copyRecursiveSync = function(src, dest){
         path.join(dest, childItemName));
     });
   }else{
-    fs.linkSync(src, dest);
+    fs.copy(src, dest);
   }
 };
 
