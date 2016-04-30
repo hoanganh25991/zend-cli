@@ -6,15 +6,15 @@ write custom command in javscript (much more easy than bash/shell script)
 
 zend framework need a skeleton to run, such as:
     
-    root
+    web-app-with-zend-framework-folder
         public
         config
         module
-            moduleA
+            ModuleA
                 config
                 src
-                    moduleA
-                        XController
+                    ModuleA
+                        Controller
                         Form
                         Model
                         Mapper
@@ -22,10 +22,6 @@ zend framework need a skeleton to run, such as:
                     module-a
                     layout
                     error
-                        x
-                            index.phtml
-                            login.phtml
-                            join.phtml
                 Module.php
 really `complicated` skeleton to sketch out zeach time
 
@@ -34,7 +30,8 @@ what if...
     zend skeleton [name]
 then all stuff __DONE__!
 
-any time when we need add a module, type
+any time when we need add new module,
+`in app folder`, type
 
     zend module [name]
 the same thing happens, module-skeleton __CREATED__, __ACTIVED__ in application.config.php!

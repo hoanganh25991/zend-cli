@@ -56,7 +56,8 @@ var copyRecursiveSync = function(src, dest){
         path.join(dest, childItemName));
     });
   }else{
-    fs.copy(src, dest);
+    console.log("copy to %s...", dest);
+    fs.copySync(src, dest);
   }
 };
 
@@ -72,7 +73,6 @@ program
     var dest = path.join(currentLocation, projectName);
     if(!fs.existsSync(dest)){
       copyRecursiveSync(src, dest);
-      console.log("completed");
     }else{
       console.log("destination already exits\t%s", dest);
     }
@@ -107,7 +107,6 @@ program
     console.log(moduleNew);
     if(!fs.existsSync(moduleNew)){
       copyRecursiveSync(moduleFrontEnd, moduleNew);
-      console.log("copy src1\t\%s to moduleNew\t%s", moduleFrontEnd, moduleNew);
       /**
        * 2. change module default named "FrontEnd" to <name>
        *   src1/FrontEnd to src1/<name>
@@ -116,6 +115,7 @@ program
        *   namespace FrontEnd in Module.php to <name>
        *   namespace FrontEnd in IndexController.php to <name>
        */
+      console.log("rename module to %s", moduleName);
       var moduleSrcOld = path.join(moduleNew, "src", "FrontEnd");
       var moduleSrcNew = path.join(moduleNew, "src", moduleName);
       fs.renameSync(moduleSrcOld, moduleSrcNew);
