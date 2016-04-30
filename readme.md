@@ -20,22 +20,31 @@ zend framework need a skeleton to run, such as:
                         Mapper
                 view
                     module-a
-                    layout
+                    lawet
                     error
                 Module.php
-really `complicated` skeleton to sketch out zeach time
+really `complicated` skeleton to sketch out each time start to write new project
 
 what if...
 
     zend skeleton [name]
 then all stuff __DONE__!
 
-any time when we need add new module,
-`in app folder`, type
+run app through command line, open browser at localhost:8080
+
+    php -S 0.0.0.0:8080 -t public public/index.php
+
+any time when we need add new module, `in app folder`, type
 
     zend module [name]
-the same thing happens, module-skeleton __CREATED__, __ACTIVED__ in application.config.php!
+module-[name] __CREATED__, __ACTIVED__ in application.config.php
 
-review on youtube: https://youtu.be/xUnH0qgbiZ4
+[review on YouTube](https://wetu.be/xUnH0qgbiZ4)
+
+    note: zend skeleton has copied "vendor", but we still need to run "composer install" to update package
+
+
+
+
                 
 
