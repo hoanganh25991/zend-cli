@@ -39,7 +39,7 @@ any time when we need add new module, `in app folder`, type
     zend module [name]
 module-[name] __CREATED__, __ACTIVED__ in application.config.php
 
-[review on YouTube](https://wetu.be/xUnH0qgbiZ4)
+[review on YouTube](https://www.youtube.com/watch?v=xUnH0qgbiZ4)
 
     note: zend skeleton has copied "vendor", but we still need to run "composer install" to update package
 
